@@ -3,17 +3,17 @@
   "name": "Health Info",
   "icons": [
     {
-      "src": "./img/icon.png",
+      "src": "/img/icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./img/icon-350.png",
+      "src": "/img/icon-350.png",
       "type": "image/png",
       "sizes": "350x350"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/index.html",
   "background_color": "#3367D6",
   "display": "fullscreen",
   "scope": "/",

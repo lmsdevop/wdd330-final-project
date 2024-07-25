@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <title>Health Info</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Get nutrition information about what you eat."> 
+      <meta name="author" content="Amon Silva">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="nutrition food product info information health fit fitness fat fatness">
+      <meta name="theme-color" content="#3367D6"/>
+      <link rel="manifest" href="manifest.json">
+      <!-- External resources -->
+
+      <!-- Getting google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+      
+      <!-- normalize -->
+      <link href="css/normalize.css" rel="stylesheet">
+
+
+      <!-- Page Style -->
+
+      <!--Main View-->
+      <link href="css/main.css" rel="stylesheet">
+
+      <!--Icon-->
+      <link rel="icon" sizes="192x192" href="img/icon.png">
+   </head>
+   <body>
+      <header id="main-header"></header>
+      <nav id="main-nav">
+         <button id='btnHamburger'>&#9776;</button>
+         <aside id='menu'>
+            <button id="closeSideMenu">X</button>
+            <ul>
+               <a href='./index.html'><li id="homeLink">Home</li></a>
+               <a href='#favority'><li id="favorityLink">Favority</li></a>
+               <a href='#about'><li id="aboutLink">About</li></a>
+            </ul>
+         </aside>
+      </nav>
+      
+      <main id="main">
+         <div id='search'>
+            <h2>Product information</h2>
+            <label for='txtSearch'>Search by product brand:</label>
+            <input type='text' id='txtSearch' placeholder='Ex.: Nutella' title='It will search the product nutrition information by it brand'>
+            <button id="btnSearch">Search</button>
+            <img id='loading' src='img/loading.png' alt="loading">
+            <div id='result'></div>
+         </div>
+      </main>
+      
+      <div id='searchResults'>
+         <nav>
+            <button id="backButton">&#x2190;</button>
+            <h5 id="productName"></h5>
+         </nav>
+         <img id='star' src="img/star-void.png" alt="star">
+         <div id='productContent'>Conteudo</div>
+      </div>
+      
+      <div id='divFavority'>
+         <nav>
+            <button id="backFavorityButton">&#x2190;</button>
+            <h5>Favority</h5>
+         </nav>
+         <ul>
+         </ul>
+      </div>
+      
+      <footer id="main-footer"></footer>
+   <script type="module" src="./js/main.js"></script>
+   </body>
+</html>
